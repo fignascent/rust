@@ -20,6 +20,10 @@ fn main() -> Result<(), Box<dyn Error>> {
                 tensorflow_folder
             ),
             &format!(
+                "{}/tensorflow/core/framework/summary.proto",
+                tensorflow_folder
+            ),
+            &format!(
                 "{}/tensorflow/core/framework/attr_value.proto",
                 tensorflow_folder
             ),
@@ -45,6 +49,18 @@ fn main() -> Result<(), Box<dyn Error>> {
             ),
             &format!(
                 "{}/tensorflow/core/protobuf/saved_model.proto",
+                tensorflow_folder
+            ),
+            &format!(
+                "{}/tensorflow/core/protobuf/struct.proto",
+                tensorflow_folder
+            ),
+            &format!(
+                "{}/tensorflow/core/protobuf/saved_object_graph.proto",
+                tensorflow_folder
+            ),
+            &format!(
+                "{}/tensorflow/core/protobuf/trackable_object_graph.proto",
                 tensorflow_folder
             ),
             &format!(
