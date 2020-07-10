@@ -16,6 +16,10 @@ fn main() -> Result<(), Box<dyn Error>> {
             .ok_or("Unable to format output path for main crate")?,
         input: &[
             &format!(
+                "{}/tensorflow/core/util/event.proto",
+                tensorflow_folder
+            ),
+            &format!(
                 "{}/tensorflow/core/framework/attr_value.proto",
                 tensorflow_folder
             ),
